@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   puppet_nodes.each do |node|
     config.vm.define node[:hostname] do |node_config|
       node_config.vm.box = node[:box]
-      node_config.vm.box_url = 'https://atlas.hashicorp.com/puppetlabs/boxes/' + node_config.vm.box + 'versions/1.0.2/providers/virtualbox.box'
+      node_config.vm.box_url = 'https://atlas.hashicorp.com/puppetlabs/boxes/' + node_config.vm.box + '/versions/1.0.2/providers/virtualbox.box'
       node_config.vm.hostname = node[:hostname] + '.' + domain
       node_config.vm.network :private_network, ip: node[:ip]
 
