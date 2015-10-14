@@ -1,6 +1,20 @@
 Description
 ===========
 
+This Branch contains a Puppet Master with 2 Client VMs running Centos-7.0-64
+
+Puppetlabs CentOS 7.0 64-bit (amd64/x86_64), no configuration management software (Box version 1.0.2)
+
+See: https://atlas.hashicorp.com/puppetlabs/boxes/centos-7.0-64-nocm
+
+VM Image changelog:
+See: https://github.com/puppetlabs/puppetlabs-packer/blob/master/templates/centos-7.0/CHANGELOG
+
+
+
+
+
+
 Puppet Sandbox is a multi-VM [Vagrant](http://vagrantup.com/)-based Puppet
 development environment used for creating and testing new modules outside
 of your production environment. It is prefered over the upstream [Learning
